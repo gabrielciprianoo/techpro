@@ -15,6 +15,21 @@
 
 /* Global Styles */
 
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+a {
+  text-decoration: none;
+}
+
+
 .roboto-thin {
     font-family: "Roboto", sans-serif;
     font-weight: 100;
