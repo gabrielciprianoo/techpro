@@ -10,8 +10,61 @@
       href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body class="roboto-regular">
+    <header class="header">
+      <div class="header-container container">
+        <div class="image-header">
+          <picture>
+            <source
+              sizes="1920w, 1280w, 640w"
+              srcset="img/header.avif 1920w, img/header.avif 1280w, img/header.avif 640w"
+              type="image/avif"
+            />
+            <source
+              sizes="1920w, 1280w, 640w"
+              srcset="
+                img/header.webp 1920w,
+                img/header.webp 1280w,
+                img/header.webp  640w
+              "
+              type="image/webp"
+            />
+            <source
+              sizes="1920w, 1280w, 640w"
+              srcset="
+                img/header.png 1920w,
+                img/header.png 1280w,
+                img/header.png  640w
+              "
+              type="image/png"
+            />
+            <img
+              loading="lazy"
+              decoding="async"
+              src="img/header.png"
+              lazyalt=""
+              width="500"
+              height="300"
+            />
+          </picture>
+        </div>
+        <div class="content-header">
+          <p class="product-tagline">Sonido Profesional</p>
+          <h1 class="product-name">TechPRO</h1>
+          <p class="product-description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam cum
+            eaque, sint voluptatibus nulla deserunt ea iusto ipsam itaque,
+            incidunt voluptate. Tenetur nesciunt commodi enim voluptates nam
+            velit laudantium illo
+          </p>
+
+          <p class="product-price">
+            Desde<span>   $299</span>
+          </p>
+        </div>
+      </div>
+    </header>
   </body>
 </html>
