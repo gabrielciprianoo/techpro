@@ -486,3 +486,59 @@ img {
   }
 }
 
+
+/* newsletter */
+
+.newsletter{
+  background-image: linear-gradient(to bottom, transparent 50%, var(--white) 0%), url(../img/newsletter.jpg);
+
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: 100%, 72rem;
+}
+
+.content-newsletter{
+  display: grid;
+  grid-template-rows: repeat(2, 40rem);
+  gap: 5rem;
+}
+
+.text-newsletter{
+  grid-row:  2/3;
+}
+
+@media (min-width: 768px) { 
+  .content-newsletter{
+    grid-template-rows: unset;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .text-newsletter{
+    grid-row:  unset;
+    grid-column: 2/3;
+  }
+
+  .newsletter{
+    background-image: linear-gradient(to right, transparent 50%, var(--white) 0%), url(../img/newsletter.jpg);
+  
+    background-position: center, -21rem -10rem;
+    padding: 10rem 0;
+    background-size: 100%, 100rem;
+  }
+}
+
+.form input[type="email"]{
+  width: 100%;
+  padding: 1rem;
+
+}
+.form input[type="submit"]{
+  width: 100%;
+  padding: 1.5rem;
+  color: var(--white);
+  background-color: var(--blue);
+  text-transform: uppercase;
+  cursor: pointer;
+  font-weight: 900;
+  border: none;
+}
